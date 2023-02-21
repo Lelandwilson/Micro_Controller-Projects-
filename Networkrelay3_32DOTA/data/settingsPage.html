@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https:www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https:fonts.googleapis.com/css?family=Raleway">
+<script src="js2.js"></script>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+.bgimg {
+	background-image: url('https:images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+    
+.switch input {display:none;}
+    
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+    
+.slider:before {
+	position: absolute;
+	content: ; 
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+    
+input:checked + .slider {
+	background-color: #2196F3;
+}
+    
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+    
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+    
+    /* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+    
+.slider.round:before {
+	border-radius: 50%;
+}
+
+meter {
+	width: 125px;
+	height: 20px;
+	-webkit-appearance: none; /* Reset appearance */
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+    
+meter::-webkit-meter-bar {
+	background: none; /* Required to get rid of the default background property */
+	background-color: white;
+	box-shadow: 0 5px 5px -5px #333 inset;
+}
+    
+</style>
+    
+
+    
+<BODY onload='process()'>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+	<div class="w3-display-topleft w3-padding-large w3-xlarge">
+</div>
+<div class="w3-display-middle">
+	<h1 class="w3-jumbo w3-animate-top">Settings</h1>
+	<hr class="w3-border-grey" style="margin:auto;width:40%">
+	<table>
+		<form action="/action_page.php"> Change save
+
+		<tr><td><div class="form-group">
+		<textarea class="form-control" rows="10" id="SerialOutput"></textarea>
+		</div>
+
+		<tr><td><label for="Blank_Space"></label>               
+		<td></td>
+		              
+		<td><input type="text" value="" id="SerialInput" size="15">
+		<tr><td><label for="SubmitSerialInput_btn"></label><input type="submit" value="Enter"> 
+
+		<tr><td><label for="Wifi_Strength">Wifi_Strength  </label>               
+		<td><meter max=-30 min=-80 value= Wifi_Strength ></meter></td>
+		      
+		      
+		<tr><td><label for="txtIp_address">Ip Address:</label>               
+		<td><input type="text" value= UnitIP id="Ip_address" size="15">
+
+		<tr><td><label for="txtWeb_Port">Port:</label>               
+		<td><input type="text" value= String(Web_Port) id="Web_Port" size="15">
+
+		<tr><td><label for="Wifi_SSID">Wifi SSID:</label>               
+		<td><input type="text" value= String(ssid) id="Wifi_SSID" size="15">
+
+		<tr><td><label for="txtWifi_Password">Wifi Password:</label>               
+		<td><input type="text" value= String(Wifi_Password) id="Wifi_Password" size="15">
+
+		<tr><td><label for="txtUser_Name">Login Username:</label>               
+		<td><input type="text" value= String(www_username) id="User_Name" size="15">
+
+		<tr><td><label for="txtUser_Password">Login Password:</label>               
+		<td><input type="text" value= String(www_password) id="User_Password" size="15">
+
+		<tr><td><label for="txtPIR1_Active">PIR1 Active:</label>               
+		<td><label class="switch"><input type="checkbox"id="Check_PIR1">
+		<span class="slider round"></span>
+		</label></td>
+
+
+		<tr><td><label for="Reset_Default">Reset factory Default</label>               
+		<td></td>
+
+		<tr><td><label for="Blank_Space"></label>               
+		<td></td>
+		      
+		<tr><td><label for="Save_btn"></label><input type="submit" value="Save">               
+		<td></td>
+		</form>
+	</table>
+	      
+	</div>
+	<div class="w3-display-bottomright w3-padding-large">
+	<a href= /Home> </a>
+	 </div>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https:www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https:fonts.googleapis.com/css?family=Raleway">
+
+<script src="https:ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link href="https:gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https:gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%%}
+.bgimg {
+	background-image: url('https:starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-04.jpg');
+	min-height: 100%%;
+	background-position: center;
+	background-size: cover;
+}
+
+
+meter {
+	width: 125px;
+	height: 20px;
+	-webkit-appearance: none; /* Reset appearance */
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+
+meter::-webkit-meter-bar {
+	background: none; /* Required to get rid of the default background property */
+	background-color: white;
+	box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+</style>
+<head>
+	<script type='text/javascript' src='js1.js'></script>
+</head>
+
+<BODY onload='process()'>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Control Centre
+</div>
+
+<div class="w3-display-topright w3-padding-large">
+    <p class="text-muted"><A id='T_id'></A></p> 
+ </div>
+
+<div class="w3-display-middle">
+    <hr class="w3-border-grey" style="margin:auto;width:20%%">
+    <table>
+ 
+ <form action="post">
+
+    <tr><td><label for="Wifi_Strength" id="sigStrength_id_1">Wifi Signal Strength: %WIFISIGNAL%</label>
+    <td><meter max=-30 min=-80 value= %WIFISIGNAL% id= sigStrength_id_2></meter></td>
+
+    <tr><td><label for="Blank_Space"></label>
+    <td></td>
+    <tr><td><label for="Blank_Space"></label>
+    <td></td>
+
+
+    <tr><td><label for="txt_R1">Festoon Lights:</label></td>
+    	<td><input id="toggle-one" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+    </label></td>
+
+  <form action="/save"> 
+    <tr><td><label for="txtOntime" size="15">On Time:</label>
+        <td><input type="text" value= %ONTIME% id="Ontime" name="Ontime" size="15">
+    </label></td>
+
+    <tr><td><label for="txtOfftime" size="15">Off Time:</label>
+        <td><input type="text" value= %OFFTIME% id="Offtime" name="Offtime" size="15">
+    </label></td>
+
+
+    <tr><td><label for="Blank_Space"></label>
+    <td></td>
+
+    <tr><td><label for="Blank_Space"></label>
+    <td></td>
+  
+	<tr><td><label for="Blank_Space"></label>               
+	<td></td>
+	  
+	<tr><td><label for="Save_btn"></label><input type="submit" value="Save">               
+	<td></td>
+</form>  
+    </table>
+
+    </div>
+    <div class="w3-display-bottomright w3-padding-large">
+         <a href="/settingsPage">Settings</a>
+        </div>
+    </div>
+</BODY>n
+</HTML>n
